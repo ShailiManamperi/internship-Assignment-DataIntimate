@@ -1,0 +1,16 @@
+npm install express@latest
+npm install nodemon@latest
+npm i @types/express
+npm i @types/node
+npm i @types/bcryptjs
+npm i --save-dev @types/mysql
+npm i @types/jsonwebtoken
+npm i dotenv
+npm i nodemon
+npm i bcryptjs
+npm i jsonwebtoken@8.5.1
+npm i mysql
+npm install mysql@latest
+npm install mysql2
+npm install mysql
+

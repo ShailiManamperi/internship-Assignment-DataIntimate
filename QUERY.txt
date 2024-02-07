@@ -1,0 +1,40 @@
+CREATE DATABASE IF NOT EXISTS test_pro;
+USE test_pro;
+CREATE TABLE IF NOT EXISTS user(
+	u_id VARCHAR(15) PRIMARY KEY,
+	username VARCHAR(15),
+	password VARCHAR(15)
+);
+
+DESC user;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| u_id     | varchar(15) | NO   | PRI | NULL    |       |
+| username | varchar(15) | YES  |     | NULL    |       |
+| password | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+
+CREATE TABLE IF NOT EXISTS products(
+	p_id VARCHAR(15) PRIMARY KEY,
+	description VARCHAR(25),
+	qty INT,
+	price DOUBLE
+);
+DESC products;
++-------------+-------------+------+-----+---------+-------+
+| Field       | Type        | Null | Key | Default | Extra |
++-------------+-------------+------+-----+---------+-------+
+| p_id        | varchar(15) | NO   | PRI | NULL    |       |
+| description | varchar(25) | YES  |     | NULL    |       |
+| qty         | int         | YES  |     | NULL    |       |
+| price       | double      | YES  |     | NULL    |       |
++-------------+-------------+------+-----+---------+-------+
+
+SHOW TABLES;
++--------------------+
+| Tables_in_test_pro |
++--------------------+
+| products           |
+| user               |
++--------------------+
